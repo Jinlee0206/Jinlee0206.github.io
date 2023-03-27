@@ -25,14 +25,13 @@ title:                 Jinlee0206
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  개발자로서 나의 성장을 기록하다
 
 # A shorter description for the sidebar.
 tagline:               Swallow The World
 
 # A list of keywords for your blog
-keywords:              [Gitblog, Jekyll, Coding, Unity]
+keywords:              [gitblog, github, git, jekyll, Coding, C, C++, C#, Unity]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -67,7 +66,7 @@ legal:
   #  url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021. All rights reserved.
+copyright:             © 2023 Jinsoo Lee. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -76,6 +75,8 @@ permalink:             /:categories/:year-:month-:day-:title/
 paginate:              10
 paginate_path:         /:num/
 
+
+# https://lazyren.github.io/devlog/how-i-customized-hydejack-theme.html
 
 # Theme
 # ---------------------------------------------------------------------------------------
