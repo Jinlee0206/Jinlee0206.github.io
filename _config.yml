@@ -17,18 +17,20 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 Jinlee0206
 
+timezone:              Asia/Seoul
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
   개발자로서 나의 성장을 기록하다
 
 # A shorter description for the sidebar.
-tagline:               Swallow The World
+tagline:               >
+  Swallow The World
 
 # A list of keywords for your blog
 keywords:              [gitblog, github, git, jekyll, Coding, C, C++, C#, Unity]
@@ -36,30 +38,33 @@ keywords:              [gitblog, github, git, jekyll, Coding, C, C++, C#, Unity]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets/img/myLogo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <Jinsoo> <Lee>
-  email:               <ljs4784@gmail.com>
+  name:                Jinsoo Lee
+  email:               ljs4784@gmail.com
+  picture:             /assets/img/myLogo.png
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
-menu:
-  - title:             Example
-    url:               /example/
+#menu:
+  #- title:             Example
+  #  url:               /example/
   #- title:             Documentation
   #  url:               /docs/
-  - title:             About
-    url:               /about/
+  #- title:             About
+  #  url:               /about/
+  #- title:             Tag
+  #  url:               /tag/ 
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
-  #- title:             LICENSE
-  #  url:               /LICENSE/
+  - title:             LICENSE
+    url:               /LICENSE/
   #- title:             NOTICE
   #  url:               /NOTICE/
   #- title:             CHANGELOG
@@ -69,12 +74,12 @@ legal:
 copyright:             © 2023 Jinsoo Lee. All rights reserved.
 
 # Format of the permalinks
-permalink:             /:categories/:year-:month-:day-:title/
+#permalink:             /:categories/:year-:month-:day-:title/
+permalink:             none
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
 paginate_path:         /:num/
-
 
 # https://lazyren.github.io/devlog/how-i-customized-hydejack-theme.html
 
@@ -82,7 +87,7 @@ paginate_path:         /:num/
 # ---------------------------------------------------------------------------------------
 
 #theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+#remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
@@ -422,3 +427,9 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+
+# jekyll-feed settings
+#feed:
+#  categories:
+#    - develop
+    
