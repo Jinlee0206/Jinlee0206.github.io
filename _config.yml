@@ -135,8 +135,9 @@ defaults:
     values:
       sitemap:         false
 
+  # Don't include documents in the sitemap (feel free to delete)
   - scope:
-      path:            licenses/
+      path:            licenses/**
     values:
       layout:          plain
       sitemap:         false
