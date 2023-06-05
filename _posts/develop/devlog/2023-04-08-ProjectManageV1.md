@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[AtentsTeamPortfoilo] 개발 업데이트 - V.1.0.0 - JS"
+title:  "[AtentsTeamPortfoilo] 개발 업데이트 - V.1"
 excerpt : "TeamPortfoilo 작성을 위한 개발 버전 업데이트 규칙과 Asana를 이용한 프로젝트 매니지먼트"
 categories: develop
 tags: devlog unity
@@ -11,6 +11,14 @@ toc_sticky : true
 date:   2023-04-08
 last_modified_at: 2023-04-08
 ---
+
+---
+### V.1.0.2 - JS
+> GameManager SingleTone 구조 구현  
+
+> ShakeCamera SingleTone 스크립트 작성 및 플레이어 담당 수민에게 전달  
+
+> ObjectPooling source Code 구현  
 
 ***
 ### V.1.0.0 - JS  
