@@ -3,7 +3,7 @@ layout: tag-list
 type: tag
 
 title: C++
-slug: c++
+slug: cpp
 category: develop
 sidebar: true
 description: >

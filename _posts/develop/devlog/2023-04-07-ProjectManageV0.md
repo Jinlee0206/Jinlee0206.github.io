@@ -14,29 +14,29 @@ last_modified_at: 2023-06-05
 
 ---
 ### V.0.0.0 
-> 기획서 제출  
-- 장르 : 3D 모바일 RPG 기반 다크 판타지 장르
-- 링크 : [Portfolio_design_doc.pdf](https://github.com/kirby1004/AtentsTeamProject/files/11157952/Portfolio_design_doc.pdf)
+- 기획서 제출  
+* 장르 : 3D 모바일 RPG 기반 다크 판타지 장르  
+* 링크 : [Portfolio_design_doc.pdf](https://github.com/kirby1004/AtentsTeamProject/files/11157952/Portfolio_design_doc.pdf)
 
 ---
 ### V.0.0.1
-> Hierarchical Scripts 추가
+* Hierarchical Scripts 추가
 
-> Asset 추가
-- Dragon(MainBoss)
-- Effect  
+* Asset 추가  
+  - Dragon(MainBoss)  
+  - Effect  
 
 _시작지역 맵 일부 추가 - 일부 맵 모델 *.Meta 파일 경로를 못찾는 에러가 존재_
 
-> 개발시작
-- Git Project Initialized
+* 개발시작  
+  - Git Project Initialized
+
 ---
 
 ### V.0.0.2
 
-> 공동 작업용 변수명 통일 기준  
-
-- 링크 : [[C#] 변수 명명법](https://jinlee0206.github.io/develop/Naming.html)  
+* 공동 작업용 변수명 통일 기준  
+  - 링크 : [[C#] 변수 명명법](https://jinlee0206.github.io/develop/Naming.html)  
 
 ---
 
