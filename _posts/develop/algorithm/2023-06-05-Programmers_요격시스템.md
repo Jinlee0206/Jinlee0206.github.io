@@ -14,6 +14,11 @@ last_modified_at: 2023-06-06
 <!-- > <span style="font-size: 80%">
 인프런에 있는 큰돌님의 강의 10주완성 C++ 코딩테스트 | 알고리즘 코딩테스트를 듣고 정리한 필기입니다.</span> -->
 
+<!--more-->
+
+* this unordered seed list will be replaced by the toc
+{:toc}
+
 ## 문제
 
 [프로그래머스 : 요격 시스템(링크)](https://school.programmers.co.kr/learn/courses/30/lessons/181188)
