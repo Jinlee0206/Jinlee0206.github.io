@@ -9,7 +9,7 @@ toc: true
 toc_sticky : true
 
 date:   2023-06-06
-last_modified_at: 2023-06-06
+last_modified_at: 2023-06-08
 ---
 <!-- > <span style="font-size: 80%">
 인프런에 있는 큰돌님의 강의 10주완성 C++ 코딩테스트 | 알고리즘 코딩테스트를 듣고 정리한 필기입니다.</span> -->
@@ -70,6 +70,6 @@ int solution(vector<vector<int>> targets) {
 ```
 
 ## 평가  
-이차원 벡터의 커스텀 정렬에 대해 이해하고, 라인스위핑에 풀이법에 대해 이해한다
+* 이차원 벡터의 커스텀 정렬에 대해 이해하고, 라인스위핑에 풀이법에 대해 이해한다
 
 __참고 : [풀이-GitHub링크](https://github.com/Jinlee0206/BOJ/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/unrated/181188.%E2%80%85%EC%9A%94%EA%B2%A9%E2%80%85%EC%8B%9C%EC%8A%A4%ED%85%9C/%EC%9A%94%EA%B2%A9%E2%80%85%EC%8B%9C%EC%8A%A4%ED%85%9C.cpp)__
