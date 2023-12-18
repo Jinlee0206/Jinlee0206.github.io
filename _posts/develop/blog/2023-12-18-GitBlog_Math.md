@@ -20,9 +20,8 @@ last_modified_at: 2023-12-18
 
 ## Mathjax를 hydejack 테마 블로그에 적용
 1. _config.yml 파일 설정  
-  - _config.yml에 이미 해당 설정이 존재하기 때문에 굳이 변경할 필요가 없다고 생각해서 수정하지 않았다.
+   - _config.yml에 이미 해당 설정이 존재하기 때문에 굳이 변경할 필요가 없다고 생각해서 수정하지 않았다.
 
->
 ```yml
 kramdown:
 math_engine: mathjax
@@ -33,7 +32,6 @@ footnote_backlink: "&#x21a9;&#xfe0e;"
 
 2. _includes 디렉토리의 my-head.html파일의 마지막에 다음 내용을 추가한다.
 
-> 
 ```html
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -61,8 +59,6 @@ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 ```
 
 3. 모든 페이지에서 수식을 허용하므로 아래 내용을 굳이 삽입하지 않음
-
-> 
 ```html
 {% if page.use_math %} {% include mathjax_support.html %} {% endif %}
 ```
