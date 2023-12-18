@@ -6,7 +6,7 @@ categories: develop
 tags: cpp algorithm
 
 toc: true
-toc_sticky : true
+comments : true
 
 date:   2023-06-06
 last_modified_at: 2023-06-08

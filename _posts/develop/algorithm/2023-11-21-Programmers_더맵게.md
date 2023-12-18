@@ -5,6 +5,7 @@ excerpt : "우선순위 큐"
 categories: develop
 tags: cpp algorithm
 toc: true
+comments : true
 
 date: 2023-11-23
 last_modified_at: 2023-11-23
