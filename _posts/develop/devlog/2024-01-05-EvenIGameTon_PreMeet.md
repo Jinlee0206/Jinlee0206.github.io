@@ -12,7 +12,10 @@ last_modified_at: 2024-01-05
 comment : true
 ---
 
-<span style = "font-size:150%"> 가장 중요한 가치는 <span style="color:#FF6495ED"> 소통과 배려</span></span>
+* this unordered seed list will be replaced by the toc
+{:toc}  
+
+<span style = "font-size:150%"> __가장 중요한 가치는 <span style="color:#FF6495ED"> 소통과 배려__</span></span>
 
 ## 온라인의 소통
  - 텍스트에는 감정이 없다  
