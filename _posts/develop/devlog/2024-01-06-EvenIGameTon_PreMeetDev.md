@@ -3,7 +3,7 @@ layout: post
 title:  "[이븐아이 게임톤] 개발자 사전강의"
 excerpt : "개임 개발 시 유의 해야할 것"
 categories: develop
-tags: devlog unity
+tags: devlog
 
 toc: true
 
