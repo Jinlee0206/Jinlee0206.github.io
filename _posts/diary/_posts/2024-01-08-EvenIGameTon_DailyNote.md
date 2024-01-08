@@ -19,12 +19,12 @@ comments : true
 ---
 
 ### 개발 초기 셋업
- 1) Unity Version matching : V22.3.4.f1 
- 2) Asset Serialization Mode : Force Text
- 3) Git Repository set up : 개인 레포지토리에 개설, public으로 사용 예정
- 4) Git LFS installed and checked -> success
- 5) Test Project 생성  
-    - 개인 Layout 생성
+ - Unity Version matching : V22.3.4.f1  
+ - Asset Serialization Mode : Force Text  
+ - Git Repository set up : 개인 레포지토리에 개설, public으로 사용 예정  
+ - Git LFS installed and checked -> success  
+ - Test Project 생성  
+   - 개인 Layout 생성
 
 ### Git, Github 비개발자 직군 간단 세미나
 
