@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[이븐아이 게임톤] 240108_DailyNote"
+title:  "240108_DailyNote"
 excerpt : "Daily Note"
 categories: develop
 tags: devlog diary
@@ -12,10 +12,10 @@ last_modified_at: 2024-01-08
 comments : true
 ---
 
-# Done List
-
 * this unordered seed list will be replaced by the toc
 {:toc}  
+
+# Done List
 
 ## 개발 초기 셋업
  1) Unity Version matching : V22.3.4.f1 
