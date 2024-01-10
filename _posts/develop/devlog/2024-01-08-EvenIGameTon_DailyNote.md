@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "DailyNote_20240108"
-excerpt : "Daily Note"
-categories: diary devlog
-tags: devlog diary
+title:  "[이븐아이 게임톤] 개발 셋업"
+excerpt : "개발 셋업"
+categories: develop
+tags: devlog
 
 toc: true
 
 date:   2024-01-08
-last_modified_at: 2024-01-09
+last_modified_at: 2024-01-10
 comments : true
 ---
 
