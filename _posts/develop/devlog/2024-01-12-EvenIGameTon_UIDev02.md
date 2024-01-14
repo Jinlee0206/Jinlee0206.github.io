@@ -83,12 +83,11 @@ public class Singleton<T> : MonoBehaviour where T : Component
    - PauseUI  
      - Home  
      <p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/5932d5ed-2ba6-4a67-bef5-3ee50ce4816b">   
-
-     - Resume  
-     <p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/4cbe18b7-650c-47f2-814a-dcb03694f070">   
-
-     - Retry  
-       - 게임씬을 로드하는 과정에서 Spawner의 참조 중 하나가 풀려 에러가 나는 것으로 보인다 에러 수정 필요
+  
+      - Resume  
+     <p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/4cbe18b7-650c-47f2-814a-dcb03694f070">  
+      - Retry  
+        - 게임씬을 로드하는 과정에서 Spawner의 참조 중 하나가 풀려 에러가 나는 것으로 보인다 에러 수정 필요
 
 
 
