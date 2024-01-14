@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[이븐아이 게임톤] UI 개발 - 동기화"
+title:  "[이븐아이 게임톤] 개발 - 동기화"
 excerpt : "UI 개발"
 categories: develop
 tags: devlog

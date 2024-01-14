@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[이븐아이 게임톤] UI 개발 - 전투, 일시정지"
+title:  "[이븐아이 게임톤] 개발 - 싱글톤 제네릭 구축, 기본 전투UI, 일시정지UI"
 excerpt : "UI 개발"
 categories: develop
 tags: devlog
@@ -8,7 +8,7 @@ tags: devlog
 toc: true
 
 date:   2024-01-11
-last_modified_at: 2024-01-14
+last_modified_at: 2024-01-15
 comments : true
 ---
 

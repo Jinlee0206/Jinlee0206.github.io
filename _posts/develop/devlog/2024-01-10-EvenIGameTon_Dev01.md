@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[이븐아이 게임톤] UI 개발 - 전투"
+title:  "[이븐아이 게임톤] 개발 - 기본 전투UI"
 excerpt : "게임 구조"
 categories: develop
 tags: devlog
