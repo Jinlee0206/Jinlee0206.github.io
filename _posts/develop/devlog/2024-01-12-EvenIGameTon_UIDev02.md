@@ -8,7 +8,7 @@ tags: devlog
 toc: true
 
 date:   2024-01-11
-last_modified_at: 2024-01-11
+last_modified_at: 2024-01-14
 comments : true
 ---
 
@@ -75,15 +75,17 @@ public class Singleton<T> : MonoBehaviour where T : Component
      - 특정 조건(레벨업)이 되었을 때, CardUI가 오픈되고 게임은 일시 정지된다.
      - 세가지 선택지 중에 하나를 선택하였을 때, 해당 카드의 효과를 스테이지 상에 즉각 업데이트하며(미구현) 게임 플레이가 재개된다.  
      <p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/e275ccf9-b6df-40de-bd7a-17619c7fda21">  
+
    - GameSpeedUI
-     - 속도 조절 UI
+     - 속도 조절 UI  
      <p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/dae52a1c-2b97-4edb-b00b-900cbd48559a">  
+
    - PauseUI  
      - Home  
-     <p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/5932d5ed-2ba6-4a67-bef5-3ee50ce4816b">  
+     <p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/5932d5ed-2ba6-4a67-bef5-3ee50ce4816b">   
 
      - Resume  
-     <p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/4cbe18b7-650c-47f2-814a-dcb03694f070">  
+     <p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/4cbe18b7-650c-47f2-814a-dcb03694f070">   
 
      - Retry  
        - 게임씬을 로드하는 과정에서 Spawner의 참조 중 하나가 풀려 에러가 나는 것으로 보인다 에러 수정 필요
