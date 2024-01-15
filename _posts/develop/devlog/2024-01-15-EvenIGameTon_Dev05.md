@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[이븐아이 게임톤] 개발 - 업그레이드"
+title:  "[이븐아이 게임톤] 개발 - 카드, 레벨업"
 excerpt : "개발"
 categories: develop
 tags: devlog
@@ -33,18 +33,22 @@ comments : true
   - 미리 만들어 둔 스크립터블 오브젝트를 랜덤하게 뜨게 하는 로직 설계 필요
   - 해금이 우선이 되어야 하기 때문에 레벨은 살리는 방향으로 설계 할 예정
 
-<p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/2dcddee9-2418-4ad1-b8a8-67dfa25db668" width = "350" height = "200">   
+<p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/2dcddee9-2418-4ad1-b8a8-67dfa25db668" width = "350" height = "200">     
+
 
 ## StageClear UI
 - StageClearUI 제작 완료
 - Reward, Stage Clear 랭크, 애니메이션 제작 필요
-<p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/f83016d8-0e6c-4831-a50d-8ba60cf75857" width = "150" height = "180">
+<p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/f83016d8-0e6c-4831-a50d-8ba60cf75857" width = "150" height = "180">  
+
 
 ## GameOverUI
-- GameOverUI 제작 완료
+- GameOverUI 제작 완료  
+
 
 ## UI Font 변경
-- 현재 UI 폰트 한글 지원 안됨 : 변경 예정
+- 현재 UI 폰트 한글 지원 안됨 : 변경 예정  
+
 
 ## 특이사항
 - 파라미터 에러 발생 _unity_self
