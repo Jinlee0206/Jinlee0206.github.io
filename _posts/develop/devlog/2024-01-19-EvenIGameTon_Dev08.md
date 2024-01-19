@@ -44,8 +44,8 @@ comments : true
 
 <p align = "center">
   <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/0b02e72c-d263-40c1-8def-10e0434c1031" align = "center" width = "150" height = "250">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/a73f2a6c-9b98-4c5b-9233-d13f50a96ded" align = "center" width = "150" height = "250"></img>
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/9b9a437c-6a8d-4d45-8328-cdf15533eb56" align = "center" width = "150" height = "250"></img>
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/a73f2a6c-9b98-4c5b-9233-d13f50a96ded" align = "center" width = "150" height = "250">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/9b9a437c-6a8d-4d45-8328-cdf15533eb56" align = "center" width = "150" height = "250">
 </p>
 
 ## DragPlayer
@@ -62,9 +62,16 @@ comments : true
 <p align="center"> <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/30c72f99-b5c0-4a18-ba49-1358908e604f" width = "150" height = "250">
 </p>
 
-### 해야할 일
+---
+
+# 해야할 일
 
 ## AchieveManager
   - 해금 조건 달성 매니저 초기 세팅 완료
   - 이차원 배열안에 해금 카드들의 GameObject를 다 담아 놓고, 해금 카드를 선택했을 시 SetActive하는 방식으로 구현 예정 
   - 1차 프로토 타입 Build Test를 위해 UI 작업을 우선 진행하였고, 21일 이후에 다시 Card 뽑기 로직 작업 진행 예정
+
+## Blog
+  - 마크다운과 html에서 이미지 정렬 하는 것 정리하기
+    - 출처 링크 : [마크다운과 html 에서 이미지 정렬](https://chanyoung-dev.github.io/Blog/Markdown/imageAlign/)
+    - 이미지 삽입 스트레스 받는다... 꼭 한번 Blog 관련 글에 정리해 놓자
