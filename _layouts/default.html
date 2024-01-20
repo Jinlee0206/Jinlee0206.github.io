@@ -29,14 +29,18 @@ layout: base
 
   <hr class="dingbat related"/>
 
-  <!-- 이전 페이지로 이동하는 링크 -->
+  <!-- 이전 포스트로 이동하는 버튼 -->
   {% if page.prev %}
-    <a href="{{ page.prev.url }}" class="prev-page">이전 페이지: {{ page.prev.title }}</a>
+    <a href="{{ page.prev.url | relative_url }}" class="btn btn-primary float-left">
+      이전 포스트: {{ page.prev.title }}
+    </a>
   {% endif %}
 
-  <!-- 다음 페이지로 이동하는 링크 -->
+  <!-- 다음 포스트로 이동하는 버튼 -->
   {% if page.next %}
-    <a href="{{ page.next.url }}" class="next-page">다음 페이지: {{ page.next.title }}</a>
+    <a href="{{ page.next.url | relative_url }}" class="btn btn-primary float-right">
+      다음 포스트: {{ page.next.title }}
+    </a>
   {% endif %}
 
   {% if site.posts.size > 0 %}
