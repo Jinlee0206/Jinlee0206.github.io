@@ -29,16 +29,6 @@ layout: base
 
   <hr class="dingbat related"/>
 
-  <!-- 이전 페이지로 이동하는 링크 -->
-  {% if page.prev %}
-    <a href="{{ page.prev.url }}" class="prev-page">이전 페이지: {{ page.prev.title }}</a>
-  {% endif %}
-
-  <!-- 다음 페이지로 이동하는 링크 -->
-  {% if page.next %}
-    <a href="{{ page.next.url }}" class="next-page">다음 페이지: {{ page.next.title }}</a>
-  {% endif %}
-
   {% if site.posts.size > 0 %}
     <h2 class="hr-bottom">{{ strings.posts | default:"Posts" }}</h2>
     <ul class="related-posts">
