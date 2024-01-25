@@ -8,7 +8,7 @@ tags: devlog
 toc: true
 
 date:   2024-01-24
-last_modified_at: 2024-01-24
+last_modified_at: 2024-01-25
 comments : true
 ---
 
@@ -25,8 +25,7 @@ comments : true
   <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/f33b4694-7fb8-4966-9dff-ea98882deab6" width = "260" height = "280">
 </p> 
 
-  - PopupManager를 이용해서 PopUpWindows를 나타내는 방향으로 PopUp System을 구현 하였기 떄문에 새로  
-
+  - PopupManager를 이용해서 PopUpWindows를 나타내는 방향으로 PopUpSystem을 구현 하였기 떄문에 SoundSettingUI가 열릴 때, 게임 상의 Sound를 받아오고, 새로 생성된 Slider에 AddListener를 이용해 함수를 연결해주는 작업 완료
 
 ## AudioManger.cs
 

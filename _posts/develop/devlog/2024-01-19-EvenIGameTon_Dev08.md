@@ -8,7 +8,7 @@ tags: devlog
 toc: true
 
 date:   2024-01-20
-last_modified_at: 2024-01-21
+last_modified_at: 2024-01-25
 comments : true
 ---
 
@@ -24,7 +24,8 @@ comments : true
 - GameOverUI
    - No : GoToHome Button
    - Yes : Retry Button
-## Spwaner 
+
+## Spawner 
 - Start함수 변경 : Battle_Proto 에서도 Run 되게 코드 수정
 
 ## 카드 뽑기 로직
