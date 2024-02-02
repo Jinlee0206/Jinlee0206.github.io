@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[이븐아이 게임톤] 개발 - 백엔드"
+title:  "[이븐아이 게임톤] 개발 - 중간발표"
 excerpt : "개발"
 categories: develop
 tags: devlog, unity
