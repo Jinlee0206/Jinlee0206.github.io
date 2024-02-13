@@ -3,12 +3,12 @@ layout: post
 title:  "[이븐아이 게임톤] 개발 - 백엔드"
 excerpt : "개발"
 categories: develop
-tags: devlog, unity
+tags: devlog unity
 
 toc: true
 
 date:   2024-02-01
-last_modified_at: 2024-02-01
+last_modified_at: 2024-02-14
 comments : true
 ---
 > <span style="font-size: 80%">

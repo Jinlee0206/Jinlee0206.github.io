@@ -3,7 +3,7 @@ layout: post
 title:  "[이븐아이 게임톤] 개발 - 도감"
 excerpt : "개발"
 categories: develop
-tags: devlog, unity
+tags: devlog
 
 toc: true
 
