@@ -371,7 +371,8 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
+social:
+  youtube: https://www.youtube.com/@user-zp5ig2lw1u
 #   name:                <firstname> <lastname>
 #   links:
 #     - https://twitter.com/<username>
