@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[이븐아이 게임톤] 개발 - FGT, 최종발표, 이벤트"
+title:  "[이븐아이 게임톤] FGT, 최종발표, 이벤트"
 excerpt : "개발"
 categories: develop
 tags: devlog
