@@ -18,9 +18,9 @@ comments : true
 <details>
   <summary> pdf 파일 다운로드 접기/펼치기 </summary>  
 
-[7번방의게임_햄찌용병단_최종발표.pdf](https://github.com/Jinlee0206/EvenIGamethon/files/14438429/No.7_Final_PPT.pdf)
-
+  [7번방의게임_햄찌용병단_최종발표.pdf](https://github.com/Jinlee0206/EvenIGamethon/files/14438429/No.7_Final_PPT.pdf)
 </details>
+
 
 <p align="center"> 
   <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/19fcd4e3-2707-44e6-8e61-4be620998281" width = "533" height = "300">
@@ -80,17 +80,19 @@ comments : true
 </p> 
 
 
+## 최종영상
+
 - 햄찌용병단 공식 트레일러
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/cwhcNkwW_A8" title="햄찌용병단 공식 Trailer Update! | 🗡🐹[햄찌용병단] | with CLOVA Dubbing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/cwhcNkwW_A8" title="햄찌용병단 공식 Trailer Update! | 🗡🐹[햄찌용병단] | with CLOVA Dubbing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - 햄찌용병단 시연영상
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/ZjYZ8TsE0BI" title="햄찌용병단 시연영상  | 대왕 해바라기씨를 되찾기 위한 여정! | 🗡🐹[햄찌용병단]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/ZjYZ8TsE0BI" title="햄찌용병단 시연영상  | 대왕 해바라기씨를 되찾기 위한 여정! | 🗡🐹[햄찌용병단]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - 햄찌용병단 최종발표
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/bJxo8vswiyU" title="[게임톤 6기] 7팀_햄찌용병단" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/bJxo8vswiyU" title="[게임톤 6기] 7팀_햄찌용병단" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## LinkBio
 - [햄찌용병단 링크바이오](https://linkbio.co/magichamzzi)
