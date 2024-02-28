@@ -18,7 +18,8 @@ comments : true
 <details>
   <summary> pdf 파일 다운로드 접기/펼치기 </summary>  
 
-- [7번방의게임_햄찌용병단_최종발표.pdf](https://github.com/Jinlee0206/EvenIGamethon/files/14438429/No.7_Final_PPT.pdf)
+[7번방의게임_햄찌용병단_최종발표.pdf](https://github.com/Jinlee0206/EvenIGamethon/files/14438429/No.7_Final_PPT.pdf)
+
 </details>
 
 <p align="center"> 
@@ -79,10 +80,17 @@ comments : true
 </p> 
 
 
-- [![햄찌용병단 공식 트레일러](http://img.youtube.com/vi/cwhcNkwW_A8?si=8544HLcUIQIFwqM_/0.jpg)](https://youtu.be/cwhcNkwW_A8?si=8544HLcUIQIFwqM_?t=0s)
-- [![햄찌용병단 시연영상](http://img.youtube.com/vi/ZjYZ8TsE0BI?si=FRd28YD5l21NLq5G/0.jpg)](https://youtu.be/ZjYZ8TsE0BI?si=FRd28YD5l21NLq5G?t=0s)
-- [![햄찌용병단 최종발표](http://img.youtube.com/vi/bJxo8vswiyU?si=l11bbhUM4Q9AUqXH/0.jpg)](https://youtu.be/bJxo8vswiyU?si=l11bbhUM4Q9AUqXH?t=0s)
+- 햄찌용병단 공식 트레일러
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/cwhcNkwW_A8" title="햄찌용병단 공식 Trailer Update! | 🗡🐹[햄찌용병단] | with CLOVA Dubbing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+- 햄찌용병단 시연영상
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/ZjYZ8TsE0BI" title="햄찌용병단 시연영상  | 대왕 해바라기씨를 되찾기 위한 여정! | 🗡🐹[햄찌용병단]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+- 햄찌용병단 최종발표
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/bJxo8vswiyU" title="[게임톤 6기] 7팀_햄찌용병단" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## LinkBio
 - [햄찌용병단 링크바이오](https://linkbio.co/magichamzzi)
-
