@@ -19,60 +19,61 @@ comments : true
 
 
 <p align="center"> 
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/19fcd4e3-2707-44e6-8e61-4be620998281" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/47aef822-189a-4382-bf34-fbcdb5293b9e" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/ab1e926b-4e8f-4ea4-83c1-0c34b96e9c8c" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/3a39a811-1460-4560-9f7d-aef2684d49e4" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/2bd9fc7a-ff95-4180-90de-e5d233692a6b" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/819d0f51-0135-437b-bcb9-4db3c821db83" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/a8c39ddc-dbb7-410e-8e8f-323a0e5d366a" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/86edb686-e9a1-46ac-9595-6c38d354575b" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/8396f191-5917-4398-a24a-451bd0d52c2f" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/b2f21401-b357-41d3-a522-8bc55f0b4323" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/7417547f-cbf8-4931-a3c8-b4aaa1afb7ca" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/46a23f2d-4d26-47d3-aac2-0d1bca20516f" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/41e26762-fa3b-46c6-bb2d-449cc7267eca" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/76134456-fa66-4f2a-97e0-9c564efb4347" width = "533" height = "300">    
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/0ebbda03-d70a-4597-9aa1-f5364f9af582" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/8e4da4b3-0bc0-4c53-9491-4332a698ac96" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/da6b948e-f96d-4d97-8283-ee1ce916b312" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/bcecaaa6-e945-453f-bae2-d827fff65411" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/7b39a004-b573-470a-ab0a-3a0a9f0a7b79" width = "533" height = "300">    
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/381a645a-63f5-48d4-9fb0-516d33779792" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/fed1a029-502b-4100-bbd2-4b4699a27ab8" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/6f257043-6393-4286-9d1f-27c28ef01514" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/70488703-da3b-4bc8-a623-fa1f82182f79" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/95740cd4-a4e1-4622-9886-29f57d459700" width = "533" height = "300">    
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/7cbfecb9-3a9e-4366-bc19-6fefa4c9e295" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/03008cfa-6b70-4c0e-a0a5-0c186b5be3df" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/6b892d12-654a-4037-bc3d-2b6bfa5a2b14" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/e926a021-cb8d-4fac-82b6-cd95b7eebc5d" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/9e5164e6-e931-4597-bc82-9f739855e83d" width = "533" height = "300"> 
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/119fce54-ca75-4798-b6af-1b655013bc15" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/390d12c9-a14a-4da4-b638-49c41d0be46a" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/78d15bee-4c8d-4ae1-9e66-5a2488a9689c" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/910907a9-8d5e-428b-a929-3cc9fb923278" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/38d34a89-56c0-430a-ae66-dc21cdaa87d4" width = "533" height = "300"> 
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/ba9e60cf-045f-41a5-9bf7-5c129ebfcc0b" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/39551dd6-9750-4ac4-a3e3-f986e54dd543" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/7eea1753-8738-441a-b3c1-2c54a70fc4aa" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/1137d6b3-bbac-4436-bad9-c517dc744d2d" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/e1e43919-26a0-4a75-8065-c063938f7fe0" width = "533" height = "300"> 
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/2081fb7a-402f-4eed-90ba-cbac3afe426b" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/7a6dde5b-c310-4dab-a365-c4aed660d50d" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/f5c9605d-12a7-40d1-ad62-7760a4ce488c" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/3a01336c-d5e4-4f73-b8b0-a5e622b6cc16" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/bf64d5cd-f244-4731-9c2a-7be7e82f7eb4" width = "533" height = "300"> 
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/08665e75-3d90-4c6f-b28b-17dd9ac189f5" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/1c47ca90-d5a2-48c8-9c0e-aa2f20445958" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/af35f4d6-fb2c-49de-a919-06585665ad7f" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/acf4eede-e648-4a48-95c5-cd7d4666d7b4" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/cc696c70-a9e6-47e8-942d-72045d6c5fac" width = "533" height = "300"> 
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/ccc33e02-1b77-4eb8-b90c-7de5d9a779eb" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/6ea85d88-8bf7-469b-9e92-a38e2bdba949" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/cc50fbac-1938-474f-942f-1c363f6c63ea" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/386ffaaf-66d3-401b-9645-bdb7f5368e63" width = "533" height = "300">
-  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/2f0722bc-3d8e-4464-a5ee-e3c80a636133" width = "533" height = "300"> 
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/c51aa524-4e2c-410a-aecd-0892b50521af" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/38cefed7-526b-417e-938c-eec5842916d8" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/abb8c4c8-ba4b-414a-9f1e-781bea835600" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/62e5696c-0875-4431-ae37-101621679460" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/d120f5be-9b22-449f-a06b-c53e3b1af501" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/50ea0ca4-352b-4d79-8791-a0eae62fbe37" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/6cc71791-4e6c-4ad0-a612-0b2517230f44" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/04c09426-687f-4c0a-9cb9-186908a57532" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/b2cdbba6-6f49-43c8-bef9-839dfc84aa78" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/4beede59-9b50-4051-b1be-3237730f3882" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/2779b95f-8770-4fef-bfcb-f5bd9026657e" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/c73b2770-d52b-4566-a6e2-63f41a633565" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/a5a735ab-c4a2-4b74-a4ae-aa4f850e6fdd" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/82fa9cdb-115f-4413-9dc5-5952e6b269c8" width = "533" height = "300">    
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/f832d7ba-ef50-4d69-a620-9deb8c0a0815" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/75fb12b6-50a5-452e-b7e2-81848a1f6652" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/ea7091bb-a5cf-4350-9c24-a7b4979099e1" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/b409d077-b60e-495e-acc2-c5a1598cc42b" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/55106357-b2f9-40a4-aca7-6302d034c591" width = "533" height = "300">    
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/885c0eda-77d9-4174-b420-5e6b29fd919a" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/e931d07e-41ec-4e8d-bdc3-1400ef2171f9" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/9fa80a17-d745-4ab1-b42f-cf1bfb64a182" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/732fe929-58d1-415b-bb64-247bf75a0b77" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/437d4c39-24ff-467e-83a0-cee782db81db" width = "533" height = "300">    
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/36733979-24e1-4a32-b813-80ff4a2a7a06" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/3c912aa4-4d34-4808-9319-3671dbfb0162" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/8c0aef24-75e6-46f5-afd8-56d1e776fc2e" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/393fbdab-be64-4a61-922a-f0c8359f58a4" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/fbbb9134-8559-4918-9fa1-ddb24e78d594" width = "533" height = "300"> 
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/d000ed74-453a-4718-98fd-6ca6d0598a21" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/24d3fd2f-4eff-4a31-a5f2-de96c2920c00" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/9a574612-c401-4579-a3ea-368ca380110f" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/573409fb-7442-4e7e-954a-20afef046588" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/0a713591-d06f-4eaa-ba1a-27570fc414fc" width = "533" height = "300"> 
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/c8f3b18b-76d2-45b3-8538-c190a2661fa9" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/efa54375-569e-4b24-a44b-8009fd42dbfc" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/2bd97dcb-6c56-4f6d-b2a0-12fd8eda6e26" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/5049480e-9a12-4edb-9917-4f63da0b1483" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/484f0cb6-5788-4fb2-a0f2-f123c1d0a8f9" width = "533" height = "300"> 
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/8ab7c3b5-6b41-4a55-aa17-6d35cfb63cbd" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/85449ad6-3898-4298-a007-9c370bf59665" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/9b42bc32-7eb0-40ed-a035-5388bdd60bee" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/f0f7b3be-44f6-4175-84d8-d03a5b207d89" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/10658c71-5f96-4dfe-aae2-1f2b0ca5f1f2" width = "533" height = "300"> 
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/726453b1-3315-4183-bccf-845aaa7f6dd2" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/af2c3313-b1b9-4370-a38e-65cd3792e7a2" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/869b3f84-6f5c-4352-8204-19faa76ffce8" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/1bb79031-5c73-4897-a88b-bcfdbc756545" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/ae05f22b-d7a2-4652-bd53-6536fe40a99c" width = "533" height = "300"> 
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/47a54f59-dcbb-48b1-b88b-969924f6263c" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/cb4f4ff2-66a9-4226-b7b5-a275c1a32425" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/895091dd-50be-4f70-a321-6d7173a9d6ff" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/a3dd5c8f-769f-4ec7-ab64-4220b231c6d1" width = "533" height = "300">
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/d4e90eb9-6376-4f23-bd81-a594139d752b" width = "533" height = "300"> 
+  <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/44e8134a-ac90-4b19-841f-fc6b519ce22f" width = "533" height = "300"> 
 </p> 
 
 
@@ -80,15 +81,15 @@ comments : true
 
 - 햄찌용병단 공식 트레일러
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/cwhcNkwW_A8" title="햄찌용병단 공식 Trailer Update! | 🗡🐹[햄찌용병단] | with CLOVA Dubbing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="533" height="299" src="https://www.youtube.com/embed/cwhcNkwW_A8" title="햄찌용병단 공식 Trailer Update! | 🗡🐹[햄찌용병단] | with CLOVA Dubbing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - 햄찌용병단 시연영상
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/ZjYZ8TsE0BI" title="햄찌용병단 시연영상  | 대왕 해바라기씨를 되찾기 위한 여정! | 🗡🐹[햄찌용병단]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="533" height="299" src="https://www.youtube.com/embed/ZjYZ8TsE0BI" title="햄찌용병단 시연영상  | 대왕 해바라기씨를 되찾기 위한 여정! | 🗡🐹[햄찌용병단]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - 햄찌용병단 최종발표
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/bJxo8vswiyU" title="[게임톤 6기] 7팀_햄찌용병단" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="533" height="299" src="https://www.youtube.com/embed/bJxo8vswiyU" title="[게임톤 6기] 7팀_햄찌용병단" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## LinkBio
 - [햄찌용병단 링크바이오](https://linkbio.co/magichamzzi)
