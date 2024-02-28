@@ -54,6 +54,7 @@ int main(){
 ```
 
 ## 포인터와 정적 배열
+
 ```cpp
 int array[5] = {0, 1, 2, 3, 4}; 
 int * ptr = array;
@@ -77,7 +78,8 @@ sizeof(array) // 20, 배열의 총 메모리 크기 리턴
 sizeof(ptr)   // 4, 포인터의 크기만 리턴
 ```
 
-- 함수 파라미터로 배열을 넘길 때
+- 함수 파라미터로 배열을 넘길 때  
+
 ```cpp
 void printArray(int * array)
 {
@@ -122,11 +124,98 @@ int main()
 - 오버라이드 : 상속 관계에서 부모 클래스의 가상 함수를 자식 클래스에서 재정의 하는 작업
 
 - 오버로딩 특징
-  - 함수명이 같은경우
+  - 함수명이 같은 경우
   - 리턴 타입이 같은 경우
   - 인자의 종류, 갯수가 달라 구분이 되는 경우
     - 인자의 이름만 다르다면 오버로딩 불가능 (같은 함수로 처리해 컴파일 불가능)
   - 인자의 const성으로 구분은 *포인터 종류*만 가능
 
 ```cpp
+void Func(int& a)
+{
+  cout << "normal reference a";
+}
+
+void Func(const int& a)
+{
+  cout << "const reference a";
+}
+
+void Func(int* a)
+{
+  cout << "normal pointer a";
+}
+
+void Func(int a)
+{
+  cout << "just a";
+}
+
+// void Func(const int a)
+// {
+//   cout << "const a";
+// }  // !Error
+```
+
+위에서 일반 변수로 들어온 a의 경우 const 유무에 상관없이 복사를 하기 때문에 const로 받는지 아닌지를 판단해야할 이유가 없음. 함수 외부의 변수가 영향을 받을 일이 없기 때문.   
+
+단 포인터나 참조의 경우 이게 const인지 아닌지에 따라서 함수 외부 값이 변경될 우려가 있기에 const 유무에 따른 오버로딩을 지원하게 되는 것.
+
+- 오버라이드 특징
+  - 함수에 없던 const성을 파생 클래스에서 재정의할 수 없다
+
+```cpp
+class Base
+{
+  public:
+    virtual void Print(int a) {cout << a;}
+};
+
+class Derived : public Base
+{
+  public:
+    // Error!
+    virtual void Print(const int a) const override {cout << a;}
+};
+```
+
+- 파생클래스에서 인자에 const를 붙일 수 있다
+
+```cpp
+class Base
+{
+  public:
+    virtual void Print(int a) {cout << "Base\n"}
+};
+class Derived : public Base
+{
+  virtual void Print(cont int a) override {cout <<"Derived\n"}
+};
+```
+
+- 함수 인자의 기본 값은 파생클래스에서 재정의할 수 없다
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Base
+{
+  public:
+    virtual void Print(int a = 1) {cout << a;}
+}
+class Derived : public Base
+{
+  public:
+    virtual void Print(const int a = 3) override {cout << a;}
+}
+
+int main()
+{
+  Base* b1 = new Base();
+  Base* b2 = new Derived();
+
+  b1->Print(); // 1
+  b2->Print(); // 1
+}
 ```

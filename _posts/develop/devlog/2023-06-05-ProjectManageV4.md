@@ -130,6 +130,6 @@ last_modified_at: 2023-06-05
   - 각 Game Scene에서 촬영 후 자막 작업 하는 방식으로 진행
   - Build, Light 등 후처리 관련 부분은 추가 작업 진행하는 것으로 합의
 
-  - 최종본 : <iframe width="942" height="530" src="https://www.youtube.com/embed/ygd3OhDwnwI" title="Unity 3D Action RPG - Grim Reaper (Final)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="942" height="530" src="https://www.youtube.com/embed/ygd3OhDwnwI" title="Unity 3D Action RPG - Grim Reaper (Final)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ---
