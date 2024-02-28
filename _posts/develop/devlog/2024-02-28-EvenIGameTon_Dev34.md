@@ -15,11 +15,7 @@ comments : true
 {:toc}
 
 ## 최종발표
-<details>
-  <summary> pdf 파일 다운로드 접기/펼치기 </summary>  
-
-  [7번방의게임_햄찌용병단_최종발표.pdf](https://github.com/Jinlee0206/EvenIGamethon/files/14438429/No.7_Final_PPT.pdf)
-</details>
+- 다운로드 링크 : [7번방의게임_햄찌용병단_최종발표.pdf](https://github.com/Jinlee0206/EvenIGamethon/files/14438429/No.7_Final_PPT.pdf)
 
 
 <p align="center"> 
