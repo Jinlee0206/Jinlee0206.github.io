@@ -16,8 +16,7 @@ Romanticism-GameDeveloper 님의 게임 개발자 면접 정리본과 평생 공
 
 - [GameDeveloper_Interview_GitHub 링크](https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview?tab=readme-ov-file)  
 
-- [평생 공부 블로그 링크](https://ansohxxn.github.io)
-</span>
+- [평생 공부 블로그 링크](https://ansohxxn.github.io)</span>
 
 <!--more-->
 
