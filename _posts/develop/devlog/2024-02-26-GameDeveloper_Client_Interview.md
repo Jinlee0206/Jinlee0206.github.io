@@ -8,7 +8,7 @@ tags: devlog unity
 toc: true
 
 date:   2024-02-26
-last_modified_at: 2024-02-26
+last_modified_at: 2024-02-29
 comments : true
 ---
 > <span style="font-size: 80%">
@@ -207,7 +207,7 @@ class Base
 class Derived : public Base
 {
   public:
-    virtual void Print(const int a = 3) override {cout << a;}
+    virtual void Print(const int a = 3) override {cout << a;} // 파생클래스에서 정의된 값은 무시
 }
 
 int main()
@@ -219,3 +219,67 @@ int main()
   b2->Print(); // 1
 }
 ```
+
+## const 키워드
+
+- const는 해당 값이 상수임을 지정하고 프로그래머가 초기화 외 이를 수정할 수 없게 하는 키워드
+
+- const와 포인터   
+  - 포인터 * 의 위치에 따라 const는 의미를 다르게 가지게 됨
+
+```cpp
+// *의 왼쪽에 오는 const의 경우에는 가리키는 값에 대해 상수화를 한다는 의미
+const int* var = &someNumber;
+
+someNumber = 2;   // OK
+*var = 2;         // Error!, 주소값이 상수화되어 고정됬으므로 변경불가
+```
+
+
+```cpp
+// *의 오른쪽에 오는 경우에는 포인터 변수가 상수화되어 가리키는 주소를 고정한다는 이야기
+int* const var = &someNumber;
+
+var = 2;              // OK
+var = &anotherNumber; // Error!, 주소 고정이므로 변경 불가
+```
+
+- 클래스에서 const   
+: 멤버변수의 const는 위의 의미를 따라 한번 결정되면 변하지 않은 값을 의미. 클래스에서 선언하면 **반드시** 초기화 해줘야 하며 C++11부터는 클래스 내부에서 `const auto var = 1`과 같은 형태의 선언이 가능하지만 대부분의 경우 생성자의 초기화 리스트에서 초기화를 함
+   
+  멤버 함수의 const는 반환값이 const 이냐, 함수가 const이냐에 따라 달라짐
+  - 반환값이 const라면 당연하게도 **반환값이 상수**
+  - 함수가 const인 경우에는 해당 함수 내에서 멤버 변수들을 **읽기 전용**으로 본다는 뜻
+    - 멤버 변수에 대한 수정(할당)등을 할 수 없음
+    - 다른 멤버 함수를 부를 때는 const인 함수만 호출 가능
+
+## static 키워드
+
+- static 멤버 변수
+
+클래스의 static 멤버 변수는 **모든 클래스의 인스턴스들이 공유하는 멤버**로 프로그램의 수명 내 한 번만 초기화되면서 계속해서 메모리에 올라가 있게 됨
+
+```cpp
+class Some
+{
+  private:
+    static int var;
+
+    // Some() : var(1) {}     // 생성자 내에서도 초기화 불가능
+}
+
+int Some::var = 0;            // 전역 범위에서 초기화 가능
+```
+
+만일 헤더와 cpp 파을 분리해서 개발하는 경우 반드시 cpp파일에서 초기화 해야 함 
+
+이 멤버의 접근 지정자가 private이라 하더라도 전역범위 초기화가 가능   
+
+다만 **static const 변수의 경우 클래스에서 초기화 하는 것이 가능**. 이는 const의 특성 상 값을 변경하는게 불가능하며 컴파일 타임 초기화되므로 가능
+
+- static 멤버 함수
+
+클래스 내 static함수는 모든 클래스가 공유하는 함수로 객체와는 관계없이 호출 가능
+
+이 함수 내에서는 일반 멤버 변수, 즉 `this`가 붙는 멤버에 대해서는 연산을 할 수 없습니다. 다만 static 멤버 변수, 함수에 대한 연산을 사용할 수 있습니다.
+
