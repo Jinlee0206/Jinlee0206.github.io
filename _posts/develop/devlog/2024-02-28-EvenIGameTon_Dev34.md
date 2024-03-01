@@ -8,7 +8,7 @@ tags: devlog
 toc: true
 
 date:   2024-02-28
-last_modified_at: 2024-02-28
+last_modified_at: 2024-03-01
 comments : true
 ---
 * this unordered seed list will be replaced by the toc
@@ -81,15 +81,15 @@ comments : true
 
 - 햄찌용병단 공식 트레일러
 
-<iframe width="533" height="299" src="https://www.youtube.com/embed/cwhcNkwW_A8" title="햄찌용병단 공식 Trailer Update! | 🗡🐹[햄찌용병단] | with CLOVA Dubbing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="450" height="254" src="https://www.youtube.com/embed/cwhcNkwW_A8" title="햄찌용병단 공식 Trailer Update! | 🗡🐹[햄찌용병단] | with CLOVA Dubbing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - 햄찌용병단 시연영상
 
-<iframe width="533" height="299" src="https://www.youtube.com/embed/ZjYZ8TsE0BI" title="햄찌용병단 시연영상  | 대왕 해바라기씨를 되찾기 위한 여정! | 🗡🐹[햄찌용병단]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="450" height="254" src="https://www.youtube.com/embed/ZjYZ8TsE0BI" title="햄찌용병단 시연영상  | 대왕 해바라기씨를 되찾기 위한 여정! | 🗡🐹[햄찌용병단]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - 햄찌용병단 최종발표
 
-<iframe width="533" height="299" src="https://www.youtube.com/embed/bJxo8vswiyU" title="[게임톤 6기] 7팀_햄찌용병단" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="450" height="254" src="https://www.youtube.com/embed/bJxo8vswiyU" title="[게임톤 6기] 7팀_햄찌용병단" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## LinkBio
 - [햄찌용병단 링크바이오](https://linkbio.co/magichamzzi)

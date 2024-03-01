@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "[유니티 클라이언트 개발] 면접 준비 01.C++"
+title:  "[기술 면접] 01.C++"
 excerpt : "개발, 면접"
 categories: develop
-tags: devlog unity
+tags: devlog cpp unity
 
 toc: true
 
 date:   2024-02-26
-last_modified_at: 2024-02-29
+last_modified_at: 2024-03-01
 comments : true
 ---
 > <span style="font-size: 80%">
@@ -284,3 +284,56 @@ int Some::var = 0;            // 전역 범위에서 초기화 가능
 
 이 함수 내에서는 일반 멤버 변수, 즉 `this`가 붙는 멤버에 대해서는 연산을 할 수 없습니다. 다만 static 멤버 변수, 함수에 대한 연산을 사용할 수 있습니다.
 
+## 가상소멸자
+
+가상소멸자(Virtual Destructor) : virtual로 선언된 소멸자
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+class A
+{
+private:
+    char* strA;
+public :
+    A(char* str)
+    {
+        strA = new char[strlen(str) + 1];
+    }
+
+    ~A()
+    {
+        cout << "~A" << endl;
+        delete []strA;
+    }
+};
+
+class B : public A
+{
+private:
+    char* strB;
+public:
+    B(char* str1, char* str2) : A(str1)
+    {
+        strB = new char[strlen(str2) + 1];
+    }
+
+    ~B()
+    {
+        cout << "~B" << endl;
+        delete[]strB;
+    }
+};
+
+int main()
+{
+    A* ptr = new B("one", "two");
+    delete ptr;
+
+    return 0;
+}
+
+// 결과 : ~A
+```

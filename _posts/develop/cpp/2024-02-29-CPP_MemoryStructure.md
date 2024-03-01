@@ -1,20 +1,21 @@
 ---
 layout: post
-title:  "[유니티 클라이언트 개발] C언어 메모리 구조, 스택프레임, 동적 할당"
+title:  "[C++] C언어 메모리 구조, 스택프레임, 동적 할당"
 excerpt : "개발, 면접"
 categories: develop
-tags: devlog unity
+tags: devlog cpp
 
 toc: true
 
 date:   2024-02-29
-last_modified_at: 2024-02-29
+last_modified_at: 2024-03-01
 comments : true
 ---
 > <span style="font-size: 80%">
 **출처**
 - [Change is the only constant 블로그 링크](https://lecor.tistory.com/64)  
-- [cmaven 깃블로그 링크](https://cmaven.github.io/c/C-Memory-Structure-Malloc/)</span>
+- [cmaven 깃블로그 링크](https://cmaven.github.io/c/C-Memory-Structure-Malloc/)
+</span>
 
 <!--more-->
 
@@ -127,6 +128,7 @@ void free(void * ptr);          // 힙 영역에 할당된 메모리 공간 해�
 ```
 
 - 반환형이 void형 포인터인 malloc 함수는 형변환이 필수, 형변환 없을 경우 오류 발생
+
 ```c
 void * ptr = malloc(sizeof(int));
 // *ptr = 20;       // Error! ptr이 void형 포인트 이므로 형변환이 필수
