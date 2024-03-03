@@ -12,10 +12,11 @@ last_modified_at: 2024-03-01
 comments : true
 ---
 > <span style="font-size: 80%">
-**출처**
-- [Change is the only constant 블로그 링크](https://lecor.tistory.com/64)  
-- [cmaven 깃블로그 링크](https://cmaven.github.io/c/C-Memory-Structure-Malloc/)
-</span>
+> **출처**
+
+> - [Change is the only constant 블로그 링크](https://lecor.tistory.com/64)
+> - [cmaven 깃블로그 링크](https://cmaven.github.io/c/C-Memory-Structure-Malloc/)
+> </span>
 
 <!--more-->
 

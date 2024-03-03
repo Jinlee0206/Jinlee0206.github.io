@@ -12,11 +12,11 @@ last_modified_at: 2024-03-01
 comments : true
 ---
 > <span style="font-size: 80%">
-Romanticism-GameDeveloper 님의 게임 개발자 면접 정리본과 평생 공부 블로그의 자료를 참고로 만든 정리 자료입니다.
+>Romanticism-GameDeveloper 님의 게임 개발자 면접 정리본과 평생 공부 블로그의 자료를 참고로 만든 정리 자료입니다.
 
-- [GameDeveloper_Interview_GitHub 링크](https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview?tab=readme-ov-file)  
+>- [GameDeveloper_Interview_GitHub 링크](https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview?tab=readme-ov-file)  
 
-- [평생 공부 블로그 링크](https://ansohxxn.github.io)</span>
+>- [평생 공부 블로그 링크](https://ansohxxn.github.io)</span>
 
 <!--more-->
 
@@ -337,3 +337,9 @@ int main()
 
 // 결과 : ~A
 ```
+
+- 객체의 소멸을 Base 포인터인 A 포인터로 명령하니, A 클래스의 소멸자만 호출됨
+- strB가 남아있어 메모리 누수가 발생
+
+> 가상소멸자를 사용하여 포인터 변수의 자료형에 상관없이 모든 소멸자가 호출되게 함
+
