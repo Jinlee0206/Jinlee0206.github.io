@@ -12,10 +12,8 @@ last_modified_at: 2024-03-01
 comments : true
 ---
 
-> <span style="font-size: 80%">
-> **출처**
-> - [ㅎㅇgdprgmer 블로그 링크](https://rehtorb-algorithm.tistory.com/8)  
-> </span>
+> <span style="font-size: 80%"> **출처** </span>   
+> <span style="font-size: 80%"> [ㅎㅇgdprgmer 블로그 링크](https://rehtorb-algorithm.tistory.com/8) </span>  
 
 <!--more-->
 
