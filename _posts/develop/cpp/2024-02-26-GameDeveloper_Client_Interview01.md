@@ -8,7 +8,7 @@ tags: devlog cpp unity
 toc: true
 
 date:   2024-02-26
-last_modified_at: 2024-03-01
+last_modified_at: 2024-03-04
 comments : true
 ---
 > <span style="font-size: 80%">
@@ -342,3 +342,6 @@ int main()
 
 > 가상소멸자를 사용하여 포인터 변수의 자료형에 상관없이 모든 소멸자가 호출되게 함
 
+- 상속 관계가 있다면 가상 소멸자를 선언해 주는 것이 유리
+- 부모클래스에 virtual 키워드를 붙이면 자식 클래스의 소멸자는 자동으로 virtual이 된다
+- 소멸자의 호출 순서 : 자식 -> 부모 클래스 순으로 불림
