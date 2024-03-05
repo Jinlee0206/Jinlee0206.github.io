@@ -8,13 +8,17 @@ tags: devlog csharp unity
 toc: true
 
 date:   2024-03-04
-last_modified_at: 2024-03-04
+last_modified_at: 2024-03-05
 comments : true
 ---
 > <span style="font-size: 80%">
-> Romanticism-GameDeveloper 님의 게임 개발자 면접 정리본을 참고로 만든 자료입니다. </span>
+> **출처**
+>   
+> Romanticism-GameDeveloper 님의 게임 개발자 면접 정리본 등을 참고로 만든 자료입니다. </span>
 
 > <span style="font-size: 80%"> [GameDeveloper_Interview_GitHub 링크](https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview?tab=readme-ov-file)</span>   
+> <span style="font-size: 80%"> [껍데기방:티스토리](https://husk321.tistory.com/358)</span>    
+
 
 <!--more-->
 
@@ -135,5 +139,194 @@ comments : true
 
 C++과의 대표적인 차이가 GC의 유무. C# 즉 .NET의 GC `Mark and Sweep` 알고리즘을 사용하고 있습니다.
 
-- 전역 변수, 현재 함수의 로컬 변수 등을 Root 잡게 됨
-- 
+- GC 동작 과정
+  - 전역 변수, 현재 함수의 로컬 변수 등을 Root로 잡게 됨
+  - 이 Root를 기반으로 점점 참조를 타고 다니면서 방문한 것들을 Mark 해줌
+  - 이러한 Mark 작업이 끝나게 된다면 Sweep 단계로 진입
+  - Sweep 단계에서는 Mark 되지 않은 것들을 가비지로 판단해 처리하게 됨
+
+> **Root 부터 사용하는 객체들을 타고 가면서 사용하는 객체들을 mark 하고 이후 mark 되지 않은 객체들을 전부 제거!**
+
+- .Net과 Unity의 GC
+  - 공통
+    - GC의 알고리즘은 `Mark and Sweep`을 기반으로 함
+  - .Net
+    - 0~2세대까지 총 3개의 세대를 통해서 관리
+  - Unity
+    - `Boehm-Demers-Weiser` 알고리즘을 통해 GC 작업을 하게됨
+    - `Mark and Sweep`인 것은 같으나 세대 구분이 없고 메모리 정렬도 없음
+    - 점진적 GC 작업을 활용하거나 오브젝트 풀링 기법들을 활용해서 최대한 최적화를 해줘야 할 필요가 있음
+
+- 상호 참조 해결법
+  - C#에서 상호참조 중인 객체 해제에 대해서는 위 `Mark and Sweep` 알고리즘을 설명하면 됨
+  - 두 객체가 서로 참조 중이라 하더라도 외부에서 참조가 없어 Mark 되지 않는다면 Sweep 단계에서 해제되게 됨
+
+> 상호 참조 제거의 과정 예시)   
+>> 1, 2가 서로를 참조하고 있을 때 1이 더이상 사용되지 않는 상황이 되었다고 가정. 이 경우 GC가 한번 동작하면 2가 1을 참조하고 있으므로 1이 살아있을 수 있게 됨. 물론 2는 직접 사용하고 있으니 당연히 사라지지 않음.      
+>> 이후 2도 사용을 하지 않게 되면 mark 단계에서 1, 2는 더이상 mark되지 않고 이후 sweep 과정에서 둘 다 사라지게 됨. 이런 식으로 상호 참조중인 객체들이 delete되지 않는걸 피할 수 있게 됨. 
+
+## delegate & event
+
+> delegate : 대표, 위임하다
+
+- delegate (델리게이트)
+  - C#에서 델리게이트는 함수를 타입화한 것.
+  - C++에서 함수 포인터와 비슷한 개념
+  - 파라미터와 리턴 타입을 통해 정의하게 되며 이후 리턴, 파라미터 타입이 같은 메소드들과 호환되어 이 메소드들에 대한 참조를 가질 수 있게 됨
+
+```cs
+public delegate void VoidAndIntEx(int i);
+
+public class ExampleClass
+{
+  public void DoSomething(VoidAndIntEx exFunc)
+  {
+    // 인자로 받은 함수를 호출
+    exFunc(1);
+  }
+}
+```
+
+C#에서 이런 델리게이트를 활용해 메소드를 담아두는 역할을 하거나 함수 인자로 넘겨 콜백 패턴을 구현하는 등 다양한 곳에 사용하게 됨
+
+- event
+  - 델리게이트와 비슷한 역할을 함
+  - **이벤트를 호출할 수 있는 건 해당 이벤트를 가진 클래스**만 가능
+
+```cs
+class ExampleClass
+{
+  // Action에 대한 설명은 아래
+  public event Action ExampleEvent;
+
+  // ...
+  if(ExampleEvent != null)
+  {
+    ExampleEvent();
+  }
+}
+```
+
+- Action, Func, Predicate
+  - Action
+    - 함수 파라미터가 T이고 반환값이 void 인 경우
+  - Func<T, TResult>
+    - 함수 파라미터가 T이고 반환값이 TResult 인 경우
+  - Predicate
+    - 함수 파라미터가 T이고 반환값이 bool 인 경우
+
+> 자주 사용하게 되는 델리게이트를 템플릿화 한 것들
+
+- null 조건부 연산자 (?.)
+
+델리게이트나 이벤트를 다루다 보면 null인지 체크를 해줘야 한다.   
+만일 null인 델리게이트를 호출한다면 `NullReferenceException`이 발생하게 됨
+
+```cs
+if(ExampleEvent != null)
+{
+  ExampleEvent();
+}
+```
+
+위 코드의 문제점은 2가지 존재 
+1. 멀티 스레드에서 호출할 경우의 문제
+2. 타자가 많다
+
+``` cs
+if(ExampleEvent != null) // 여기서는 문제가 없었는 데
+{
+  // 여기서 다른 스레드가 구독을 취소해서 null이 됨
+  ExampleEvent(); // NullReferenceException!
+}
+```
+
+이런 복작한 문제는 검출이 어렵기에 아래 '복사후 실행'이란 방법을 통해서 예방할 수 있음
+
+```cs
+var CopiedEvent = ExampleEvent;
+
+if(CopiedEvent != null)
+{
+  // 여기서 ExampleEvent 구독 취소해도 문제 없음
+  CopiedEvent();
+}
+```
+
+다만 이 경우 위에 언급한 '타자가 많다' 문제는 해결할 수 없음. 매 번 복사하는 것도 비효율적   
+때문에 `?.`연산자 활용
+
+> `?.` : `?` 왼쪽의 항이 null이 아니라면 `.` 뒷부분을 실행하겠다는 의미
+
+```cs
+ExampleEvent?.Invoke();
+```
+
+함수의 경우 `Invoke`를 붙여서 호출 가능. 그리고 이 연산자의 경우 **원자적으로(처리 중간에 다른 것들이 끼어들 여지를 주지 않음) 수행이 되는 연산자**라서 이 연산 도중 다른 스레드가 개입할 여지가 없어 멀티 스레드 환경에서도 안전하게 돌아감
+
+## this
+
+- this 키워드
+  - **클래스의 현재 인스턴스**를 가리키는 키워드
+  - 매개변수 이름과 클래스 필드가 이름이 같다면 this로 구분할 수 있음
+  - 클래스 내에서 클래스 필드를 사용할 때는 다 this가 생략된 경우
+
+- 생성자 this()
+
+생성자의 이름은 클래스 이름과 동일해야 하며 void 형식이어야 함
+
+```cs
+class MyClass
+{
+  int a;
+  int b;
+
+  public MyClass()
+  {
+    a = 10;
+  }
+
+  public MyClass(int b)
+  {
+    a = 10;
+    this.b = b;
+  }
+}
+```
+
+다만 이 경우 너무 중복되는 코드들이 양산될 수 있어서 `this()` 생성자를 사용   
+`this()`는 자기 자신의 생성자를 가리키며 이는 생성자에서만 활용이 가능
+
+```cs
+class MyClass
+{
+  int a;
+  int b;
+  
+  public MyClass()
+  {
+    a = 10;
+  }
+
+  public MyClass(int b) : this()
+  {
+    this.b = b;
+  }
+}
+```
+
+`this()` 키워드는 생성자를 가리키기에 인자를 줘서 인자를 받는 다른 생성자를 가리킬 수도 있음
+
+- 정적 함수 파라미터의 this
+  - 정적 함수 파라미터에 하는 this는 `확장 메서드`를 만드는 데 사용되는 키워드
+  - 멤버 함수를 호출하듯 함수 호출 가능
+
+```cs
+public static void Shuffle<T> IList<T> list;
+
+List<MyClass> exList = new List<MyClass>();
+
+Shuffle(exList);
+exList.Shuffle(); // this 덕분에 가능
+```
+
