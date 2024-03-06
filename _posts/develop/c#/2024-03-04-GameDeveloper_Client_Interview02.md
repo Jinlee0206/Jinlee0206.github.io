@@ -8,17 +8,12 @@ tags: devlog csharp unity
 toc: true
 
 date:   2024-03-04
-last_modified_at: 2024-03-05
+last_modified_at: 2024-03-06
 comments : true
 ---
-> <span style="font-size: 80%">
-> **출처**
->   
-> Romanticism-GameDeveloper 님의 게임 개발자 면접 정리본 등을 참고로 만든 자료입니다. </span>
-
-> <span style="font-size: 80%"> [GameDeveloper_Interview_GitHub 링크](https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview?tab=readme-ov-file)</span>   
-> <span style="font-size: 80%"> [껍데기방:티스토리](https://husk321.tistory.com/358)</span>    
-
+> <span style="font-size: 80%"> **출처** </span>
+>> <span style="font-size: 80%"> [GameDeveloper_Interview_GitHub 링크](https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview?tab=readme-ov-file)</span>      
+>> <span style="font-size: 80%"> [껍데기방:티스토리](https://husk321.tistory.com/358)</span>    
 
 <!--more-->
 
@@ -322,11 +317,67 @@ class MyClass
   - 멤버 함수를 호출하듯 함수 호출 가능
 
 ```cs
-public static void Shuffle<T> IList<T> list;
+public static void Shuffle<T>(this IList<T> list);
 
 List<MyClass> exList = new List<MyClass>();
 
 Shuffle(exList);
 exList.Shuffle(); // this 덕분에 가능
 ```
+
+이런식으로 클래스나 인터페이스를 확장할 수 있음.   
+
+다만 기존 클래스의 함수나 동일한 시그니처로 정의하면 호출하지 않게 됨.   
+=> 확장 메서드는 컴파일 타임에 바인딩되는 데 컴파일러가 함수 호출을 볼 때 인스턴스 함수를 먼저 보게 되고 그 다음 확장 메서드를 보게 됨.   
+따라서 확장 메서드가 우선순위에서 밀려 호출되지 않음
+
+## List와 Dictionary
+
+- 내부 자료구조
+
+| 컨테이너              | 자료구조       |
+| --------------------- | -------------- |
+| `List<>`              | 배열           |
+| `SortedSet<>`         | 레드-블랙 트리 |
+| `HashSet<>`           | 해시 테이블    |
+| `Dictionary<,>`       | 해시 테이블    |
+| `SortedList<,>`       | 배열           |
+| `SortedDictionary<,>` | 레드-블랙 트리 |
+
+
+- List는 C++의 Vector와 유사
+  - 메모리에는 배열처럼 올라감
+  - 원소 삽입이 있을 때, `List`의 용량을 초과하게 되면 새 공간을 할당해 기존 원소들을 복사해가기에 최대 O(N) 시간 복잡도를 가짐
+  - Remove의 경우 용량 변화 없음
+
+- SortedSet은 set, HashSet은 unordered_set
+  - 내부적으로 레드-블랙트리를 사용하는 자료구조는 정렬된 완전 이진트리이므로 삽입, 삭제에 있어 O(logN) 시간이 소요되며 해시를 사용하는 자료구조들은 대부분 O(1)이지만 최악의 경우 O(N)이 될 수 있음
+
+- Dictionary는 unordered_map, SortedDictionary는 map
+  - 항시 정렬된 상태로 데이터를 저장하는 것 외에는 `Dictionary`사용이 더 좋음
+
+## C# vs C++
+- GC
+  - 두 언어의 가장 큰 차이
+  - C#의 GC는 `Mark and Sweep` 알고리즘에 기반을 두고 있으므로 힙에 할당된 객체에 대한 포인터 추적을 진행하게 됨. 이로 인해 C++의 생성-소멸 주기보다는 오버헤드가 걸릴 수 있음
+  - 수 많은 객체들을 생성한 후 나중에 GC로 돌리게 되면 더 많은 시간을 사용하게 되므로 속도가 더 느려짐
+  - 최근에는 세대 기반 알고리즘을 통해 '살아있을 가능성이 있는 객체'는 뒤로 물러나게 해서 GC 시간을 줄이려는 방향으로 발전 중
+
+- 가상머신 (VM - Virtual Machine)
+  - 초기 구동시에 JIT 컴파일러를 위해 한 번 대기하는 과정이 있음
+  - C++로 작성된 프로그램은 대부분 32bit 코드로 컴파일 되며 64bit 운영체제에서도 32bit로 돌아감. JIT 컴파일러를 사용하는 C#의 경우 타겟 플랫폼에 대한 이해도를 가질 수 있어서 64bit에 맞춰 컴파일을 하게 됨. 
+
+> **JIT 컴파일러** : Just-In-Time 컴파일러 바이트 코드를 컴퓨터 프로세스(CPU)로 직접 보낼 수 있는 명령어로 바꾸는 프로그램
+
+- C++의 TMP / C#의 리플렉션
+  - TMP
+    - 정적인 프로그램
+    - 컴파일 시간에 계산을 할 수 있다는 장점이 존재 (런타임에는 불가)
+    - TMP로 팩토리얼을 O(1)로 계산할 수 있지만 이는 컴파일 타임, 사용자 입력에 따른 유동성을 고려하지 않은 것
+  - 리플렉션
+    - 런타임에 리플렉션을 통해 수행. trade-off(안정성-성능)가 존재
+
+> **TMP**(Template Meta Programming) : 컴파일 도중에 실행되는 템플릿 기반의 프로그램을 작성하는 일
+
+> **리플렉션** : 어떤 Type에 대한 정보를 가져오거나 접근하는 등의 작업을 런타임에 동적으로 수행할 수 있도록 해주는 기능. 리플렉션을 사용하면 런타임에서 메서드를 호출하거나 필드의 값을 바꾸는 등의 작업을 할 수 있다.
 
