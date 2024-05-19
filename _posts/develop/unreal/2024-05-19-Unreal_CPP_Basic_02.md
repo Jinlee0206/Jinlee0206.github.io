@@ -268,40 +268,6 @@ double pointer address = 000000CE29CFFCC8
 */
 ```
 
-## 함수
-- 특정 동작을 하는 코드를 미리 작성하고 필요할 때 해당 코드를 동작시킬 수 있게 해주는 기능
-- 전달인자(argument)
-  - 함수를 호출할 때, 필요로 하는 데이터나 변수가 있을 경우 전달인 자를 이용해서 데이터 변수를 함수로 넘겨준다
-- 매개변수(parameter)
-  - 함수 영역 안에서 쓰이는 변수
-  - 함수를 호출할 때 주어지는 전달인자의 값을 대체하는 용도로 쓰임
-
-```cpp
-반환타입 함수명(매개변수)
-{
-	동작 코드
-}
-```
-
-```cpp
-int Add(int a, int b)
-{
-	return a + b;
-}
-
-void Output()
-{
-	cout << "Output Function" << endl;
-}
-
-int main()
-{
-	cout << Add(1, 2) << "\n";
-
-	return 0;
-}
-```
-
 ### void 포인터
 - void는 타입이 없다는 의미이기 때문에 일반 변수를 선언하여 사용하는 것이 불가능
 - void의 포인터 타입 변수는 선언하여 사용이 가능하다
@@ -322,60 +288,6 @@ int main()
 	voidPtr = &num2;
 	intPtr = (int*)voidPtr; // float 타입을 담고있는 voidPtr을 int형으로 형변환 하는 경우 
 	cout << *intPtr << '\n'; // float 타입을 int 타입으로 강제 형변환 할 때 값 손실이 일어날 수 있다
-	return 0;
-}
-```
-
-### 함수 오버로딩
-- 같은 이름의 함수를 다양한 형태로 만들어줄 수 있는 기능
-- 함수 이름이 같고 매개변수의 타입 혹은 개수가 다르다면 오버로딩이 성립된다
-- 반환타입은 오버로딩과 관련이 없다
-- 디폴트 매개변수
-  - 매개변수에 기본 값을 미리 설정해두는 기능
-  - 이 함수를 호출하며 매개변수에 전달인수를 전달할 경우 기본 값은 무시되며 전달된 값을 사용하게 된다
-  - 이 함수를 호출하며 인자에 값을 전달하지 않을 경우 인자의 값은 기본값으로 설정이 되어 사용하게 된다  
-  - 함수의 디폴트 매개변수는 **가장 오른쪽 매개변수부터 왼쪽으로** 차례대로 설정해야한다
-  - 함수 오버로딩 사용 시 **디폴트 매개변수의 개수가 동일한 문제**가 일어날 수 있으니 주의해서 사용
-
-```cpp
-int Add(int a, int b)
-{
-	return a + b;
-}
-
-int Add(float a, float b)
-{
-	return (int)(a + b);
-}
-
-int Add(int a, int b, int c)
-{
-	return a + b + c;
-}
-
-// 디폴트 매개변수
-void OutputNumber(int n = 1111) // 인자를 0개 혹은 1개를 전달 받을 수 있다
-{
-	cout<< n << '\n';
-}
-
-// 함수의 디폴트 매개변수는 가장 오른쪽 매개변수부터 왼쪽으로 차례대로 설정해야한다
-void OutputNumber(int n1, int n2 = 100) // 인자를 1개 혹은 2개를 전달 받을 수 있다
-{
-	printf("Number1 = %d, Number2 = %d\n", n1, n2);
-}
-
-int main()
-{
-	int num = Add(10, 20);
-	num = Add(3.14f, 2);
-	num = Add(1, 2, 3);
-
-	OutputNumber(); // 1111
-	OutputNumber(101010); // Error, 어떤 함수를 호출할 지 컴파일러가 판단하지 못함
-
-	OutputNumber(500, 200);
-	OutputNumber(500); // Error 
 	return 0;
 }
 ```
@@ -456,6 +368,94 @@ struct FTestStruct
 void OutputTestStruct(const FTestStruct& str) // 구조체를 인자로 넘겨줄 때 ref로 지정
 {
 	//str.test1[2] = 1020; // 참조하는 대상의 값을 바꿀 수 없다
+}
+```
+
+## 함수
+- 특정 동작을 하는 코드를 미리 작성하고 필요할 때 해당 코드를 동작시킬 수 있게 해주는 기능
+- 전달인자(argument)
+  - 함수를 호출할 때, 필요로 하는 데이터나 변수가 있을 경우 전달인 자를 이용해서 데이터 변수를 함수로 넘겨준다
+- 매개변수(parameter)
+  - 함수 영역 안에서 쓰이는 변수
+  - 함수를 호출할 때 주어지는 전달인자의 값을 대체하는 용도로 쓰임
+
+```cpp
+반환타입 함수명(매개변수)
+{
+	동작 코드
+}
+```
+
+```cpp
+int Add(int a, int b)
+{
+	return a + b;
+}
+
+void Output()
+{
+	cout << "Output Function" << endl;
+}
+
+int main()
+{
+	cout << Add(1, 2) << "\n";
+
+	return 0;
+}
+```
+
+### 함수 오버로딩
+- 같은 이름의 함수를 다양한 형태로 만들어줄 수 있는 기능
+- 함수 이름이 같고 매개변수의 타입 혹은 개수가 다르다면 오버로딩이 성립된다
+- 반환타입은 오버로딩과 관련이 없다
+- 디폴트 매개변수
+  - 매개변수에 기본 값을 미리 설정해두는 기능
+  - 이 함수를 호출하며 매개변수에 전달인수를 전달할 경우 기본 값은 무시되며 전달된 값을 사용하게 된다
+  - 이 함수를 호출하며 인자에 값을 전달하지 않을 경우 인자의 값은 기본값으로 설정이 되어 사용하게 된다  
+  - 함수의 디폴트 매개변수는 **가장 오른쪽 매개변수부터 왼쪽으로** 차례대로 설정해야한다
+  - 함수 오버로딩 사용 시 **디폴트 매개변수의 개수가 동일한 문제**가 일어날 수 있으니 주의해서 사용
+
+```cpp
+int Add(int a, int b)
+{
+	return a + b;
+}
+
+int Add(float a, float b)
+{
+	return (int)(a + b);
+}
+
+int Add(int a, int b, int c)
+{
+	return a + b + c;
+}
+
+// 디폴트 매개변수
+void OutputNumber(int n = 1111) // 인자를 0개 혹은 1개를 전달 받을 수 있다
+{
+	cout<< n << '\n';
+}
+
+// 함수의 디폴트 매개변수는 가장 오른쪽 매개변수부터 왼쪽으로 차례대로 설정해야한다
+void OutputNumber(int n1, int n2 = 100) // 인자를 1개 혹은 2개를 전달 받을 수 있다
+{
+	printf("Number1 = %d, Number2 = %d\n", n1, n2);
+}
+
+int main()
+{
+	int num = Add(10, 20);
+	num = Add(3.14f, 2);
+	num = Add(1, 2, 3);
+
+	OutputNumber(); // 1111
+	OutputNumber(101010); // Error, 어떤 함수를 호출할 지 컴파일러가 판단하지 못함
+
+	OutputNumber(500, 200);
+	OutputNumber(500); // Error 
+	return 0;
 }
 ```
 
