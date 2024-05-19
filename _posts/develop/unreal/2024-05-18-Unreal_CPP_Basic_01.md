@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Unreal] 언리얼 기초 C++"
+title:  "[Unreal] 언리얼 기초 C++_01"
 excerpt : ""
 categories: develop
 tags: cpp unreal
@@ -9,7 +9,7 @@ comments : true
 use_math : true
 
 date: 2024-05-18
-last_modified_at: 2024-05-18
+last_modified_at: 2024-05-19
 ---
 > <span style="font-size: 80%">
 본 문서는 어소트락 언리얼엔진 게임프로그래머 양성과정의 강의를 토대로 필기한 내용입니다 </span>
@@ -36,6 +36,12 @@ int main()
     return 0;
 }
 ```
+
+- 통합개발환경 (IDE, Integrated Development Enviroment)
+  - 코딩, 컴파일, 디버깅, 실행을 통합시켜 놓은 어플리케이션 
+
+## 컴파일러
+- 사람들이 사용하기 편한 언어로 작성한 작업내용을 기계어로 번역할 수 있도록 번역
 
 ## 전처리기
 - 전처리기에서 지원하는 기능 여기에 포함시켜서 사용할 수 있게 해준다    
@@ -123,7 +129,6 @@ else	// 위의 조건들이 false일 경우 아래 코드 동작
 ```
 
 ### switch 문
-
 ```cpp
 int number = 2;
 switch (number)
@@ -161,7 +166,7 @@ namespace EJob
 	};
 }
 
-enum class EJob1 : unsighed char // Enum Class의 크기를 1바이트로 제한
+enum class EJob1 : unsigned char // Enum Class의 크기를 1바이트로 제한
 {
 	Knight,
 	Archer,
@@ -193,7 +198,6 @@ int main(){
 - for, while, do while 3가지 문법 지원
 
 ### for문
-
 ```cpp
 for(초기값; 조건식; 증감값)
 {
