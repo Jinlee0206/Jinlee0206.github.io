@@ -16,6 +16,8 @@ comments : true
 
 ## 기술문서
 
+- 다운로드 링크 : [7번방의게임_햄찌용병단_기술문서.pdf](https://github.com/Jinlee0206/Jinlee0206.github.io/files/15399777/_._.pdf)
+
 <p align="center"> 
   <img src = "https://github.com/Jinlee0206/Jinlee0206.github.io/assets/105345909/d873e362-d581-46ea-b34b-bea89d22b7cf" width = "533" height = "300">
   <img src = "https://github.com/Jinlee0206/Jinlee0206.github.io/assets/105345909/a0fa1008-cb26-4555-a074-561d124b9763" width = "533" height = "300">
