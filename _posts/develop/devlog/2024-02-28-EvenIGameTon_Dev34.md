@@ -8,15 +8,13 @@ tags: devlog
 toc: true
 
 date:   2024-02-28
-last_modified_at: 2024-03-01
+last_modified_at: 2024-05-22
 comments : true
 ---
 * this unordered seed list will be replaced by the toc
 {:toc}
 
 ## 최종발표
-- 다운로드 링크 : [7번방의게임_햄찌용병단_최종발표.pdf](https://github.com/Jinlee0206/EvenIGamethon/files/14438429/No.7_Final_PPT.pdf)
-
 
 <p align="center"> 
   <img src = "https://github.com/Jinlee0206/EvenIGamethon/assets/105345909/c51aa524-4e2c-410a-aecd-0892b50521af" width = "533" height = "300">
