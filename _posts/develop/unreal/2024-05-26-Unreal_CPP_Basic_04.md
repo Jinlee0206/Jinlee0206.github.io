@@ -9,7 +9,7 @@ comments : true
 use_math : true
 
 date: 2024-05-26
-last_modified_at: 2024-05-27
+last_modified_at: 2024-05-29
 ---
 > <span style="font-size: 80%">
 본 문서는 어소트락 언리얼엔진 게임프로그래머 양성과정의 강의를 토대로 필기한 내용입니다 </span>
@@ -276,5 +276,350 @@ int main()
 	CSingleton::DestroyInst();
 
 	return 0;
+}
+```
+
+- 배열을 활용한 싱글톤 생성
+
+```cpp
+#include <iostream>
+using namespace std;
+#define Singleton_Array_Count 10
+
+class CSingletonArray
+{
+private:
+	CSingletonArray()
+	{
+	}
+
+	~CSingletonArray()
+	{
+	}
+
+public:
+	void Output()
+	{
+		cout << "CSingleton Output Function" << endl;
+	}
+
+private:
+	static CSingletonArray* mInst[Singleton_Array_Count]; // 포인터 변수 10개가 생성됨 (80바이트 만큼의 포인터변수 생성)
+	
+
+public:
+	static CSingletonArray* GetInst(int idx)
+	{
+		if (nullptr == mInst[idx])
+		{
+			mInst[idx] = new CSingletonArray;
+		}
+		return mInst[idx];
+	}
+
+	static void DestroyInst(int idx)
+	{
+		if (nullptr != mInst[idx])
+		{
+			delete mInst[idx];
+			mInst[idx] = nullptr;
+		}
+	}
+
+	static void DestroyAll()
+	{
+		for (int i = 0; i < Singleton_Array_Count; i++)
+		{
+			if (nullptr != mInst[i])
+			{
+				delete mInst[i];
+				mInst[i] = nullptr;
+			}
+		}
+	}
+};
+
+CSingletonArray* CSingletonArray::mInst[Singleton_Array_Count] = {};
+
+int main()
+{
+	CSingletonArray::GetInst(3);
+	CSingletonArray::GetInst(5);
+
+	CSingletonArray::DestroyInst(3); // 3번 인덱스에 해당하는 싱글톤 동적할당 해제
+	CSingletonArray::DestroyAll(); // 모두 할당 해제
+
+	return 0;
+}
+```
+
+## 템플릿
+- 타입을 원하는 타입으로 지정할 때 사용
+- 템플릿은 컴파일 타임에 결정되는 것만 사용할 수 있다
+
+
+### 함수 템플릿
+- 클래스 템플릿은 그 자체로 클래스는 아님, 클래스의 틀일뿐
+
+```cpp
+// 함수 템플릿 일반화
+template <typename 원하는이름>
+원하는이름 (매개변수)
+{
+	함수내용
+}
+template <typename 원하는이름, typename 원하는이름2>
+
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// 함수 오버로딩
+int Plus(int num1, int num2) { return num1 + num2; }
+float Plus(float num1, float num2) { return num1 + num2; }
+
+// 함수 템플릿 일반화
+template <typename T>
+T Minus(T num1, T num2)
+{
+	return num1 - num2;
+}
+
+// default type 템플릿
+template <typename T = int> // defalut type 지정 가능
+void OutputTemplateDefaultType()
+{
+	cout << typeid(T).name() << endl; // 타입명을 알기위한 함수
+	// typeid(T).hash_code() == typeid(int).hash_code();
+}
+
+// 비타입템플릿 인수를 사용하면 템플릿 매개변수(count)는 이 함수 내에서만 사용할 수 있는 상수가 됨
+template <typename T = int, int count> 
+void TestintTemplate()
+{
+	cout << count << endl;
+
+	int arr[count];
+	int arrCount = 10;
+	int arr1[arrCount];
+}
+
+int main()
+{
+	cout << Plus(10, 20) << endl; // 30
+	cout << Plus(103.6f, 230.05f) << endl; // 333.65
+
+	cout << Minus<float>(3.14f, 230.112f) << endl; // -226.972
+	cout << Minus(10, 30) << endl; // -20 // 템플릿 함수에 타입을 지정안할 경우 전달인수로 들어간 값의 타입으로 자동 지정됨
+
+	TestintTemplate<int, 30>(); // 30 (상수)
+	TestintTemplate<int, 50>(); // 50 (상수)
+	return 0;
+}
+```
+
+### 클래스 템플릿
+- 보통 헤더파일에 생성 : 템플릿은 선언과 구현을 동시에 헤더에 생성 => 링킹에러 방지
+- 비타입템플릿 인수를 사용하면 count는 이 함수 내에서만 사용할 수 있는 상수가 됨
+  - 일반변수는 컴파일 때 메모리가 정해지지 않음
+  - const 상수는 컴파일 때 메모리가 정해지기 때문
+
+```cpp
+// 클래스 템플릿 일반화
+template <class 클래스이름>
+클래스이름 (매개변수)
+{
+	함수내용
+}
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+template<class T, class T1>
+void OutputTemplate(T first, T1 second)
+{
+
+}
+
+// 템플릿 클래스
+template <typename T>
+class CTemplate
+{
+public:
+	T mA;
+
+public:
+	void Test()
+	{
+		cout << "Test" << endl;
+	}
+
+	// 멤버함수에 템플릿타입을 따로 지정하는 것도 가능
+	template<typename FuncType1>
+	void Test1(T First, FuncType1 Second)
+	{
+		cout << typeid(T).name() << endl; // 클래스 선언할 때 지정한 타입
+		cout << typeid(FuncType1).name() << endl; // 함수 호출할 때 지정한 타입
+	}
+};
+
+int main()
+{
+	OutputTemplate<int, float>(10, 3.14f);
+
+	CTemplate<int> tp1;
+	CTemplate<float> tp2;
+
+	tp1.mA = 100;
+	tp2.mA = 3.14f;
+
+	cout << tp1.mA << endl;
+	cout << tp2.mA << endl;
+
+	tp1.Test();
+	tp2.Test1<int>(3.14f, 20); // float, int
+
+	return 0;
+}
+```
+
+## 헤더파일과 소스파일
+- 함수의 선언부와 구현부를 나눠서 코딩
+- add.h 헤더파일은 프로젝트와 동일한 위치에 있어야 한다.
+- 헤더에서 헤더를 참조하는 것 -> 순환 참조 (Error)
+  - 전방선언을 헤더에 하고
+  - 포인터 변수로 포인터 객체 생성
+  - 구현부에서 사용할 헤더 include
+
+- GameInfo.cpp
+```cpp
+#include "GameInfo.h"
+
+// 함수의 구현부
+void ItemOutput(const FItem& item)
+{
+	cout << "이름 : " << item.Name << endl;
+}
+```
+
+- GameInfo.h
+```cpp
+#pragma once
+#include <iostream>
+using namespace std;
+
+namespace EItemType
+{
+	enum Type
+	{
+		Weapon,
+		Armor
+	};
+}
+
+struct FItem
+{
+	char Name[32] = {};
+	EItemType::Type ItemType;
+};
+
+void ItemOutput(const FItem& item); // 함수의 선언부
+```
+
+- main
+```cpp
+#include "GameInfo.h"
+
+int main()
+{
+	FItem item;
+
+	strcpy_s(item.Name, "목검");
+
+	ItemOutput(item);
+
+	return 0;
+}
+```
+
+- monster.h
+```cpp
+#pragma once
+#include "GameInfo.h"
+// #include "Effect.h" // 순환참조 방지
+
+class CEffect; // 전방선언 
+
+class CMonster
+{
+public:
+	CEffect* mEffect; // 포인터 변수로 선언
+
+public:
+	CMonster(); // 헤더에는 선언만 존재
+	~CMonster();
+
+protected:
+	char Name[32] = {};
+	int mAttack = 0;
+	int mDefense = 0;
+
+public:
+	void Output();
+	void Output1();
+	void Output2();
+};
+```
+
+- monster.cpp
+```cpp
+#include "Monster.h"
+#include "Effect.h"
+
+CMonster::CMonster() { }
+CMonster::~CMonster() { }
+
+void CMonster::Output() { }
+void CMonster::Output1() { }
+void CMonster::Output2() { }
+```
+
+- effect.h
+```cpp
+#pragma once
+#include "GameInfo.h"
+//#include "Monster.h"
+
+class CMonster; // 전방선언
+
+class CEffect
+{
+public:
+	CEffect();
+	~CEffect();
+
+public:
+	CMonster* mMonster; // 포인터 변수로 포인터 객체 생성
+};
+```
+
+- effect.cpp
+```cpp
+#include "Effect.h"
+#include "Monster.h"
+
+CEffect::CEffect()
+{
+	mMonster = new CMonster;
+	mMonster->Output();
+}
+
+CEffect::~CEffect()
+{
+	delete mMonster;
 }
 ```
